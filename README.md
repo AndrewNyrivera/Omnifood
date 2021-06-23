@@ -1,2 +1,2 @@
 # Omnifood
-https://andrewnyrivera.github.io/Omnifood/
+https://onthegocode.github.io/Omnifood/
