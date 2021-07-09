@@ -99,7 +99,7 @@ h2:after {
   /*secrets to align text and icons */
   line-height: 120%;
   vertical-align: middle;
-  margin-top:-5px;
+  margin-top: -5px;
   margin-right: 10px;
 }
 /*------- LINKS -------*/
@@ -160,6 +160,7 @@ header {
   background-position: center;
   background-size: cover;
   height: 100vh;
+  background-attachment: fixed; /*Makes background image stay in the same place (creates cool effect)*/
 }
 .hero-text-box {
   position: absolute;
@@ -265,7 +266,7 @@ header {
   margin-bottom: 80px;
 }
 .works-step div {
-  display: inline-block;
+  display: inline-block; /* You Don't actually need this since float will always treat it as display: block; */
   color: #e67e22;
   border: 2px solid #e67e22;
   border-radius: 50%;
@@ -297,4 +298,41 @@ header {
 }
 .city-feature {
   margin-bottom: 5px;
+}
+
+/*------------------------------------------------------*/
+/* TESTIMONIALS SECTION */
+/*-----------------------------------------------------*/
+.section-testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed; /*Makes background image stay in the same place (creates cool effect)*/
+}
+blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+  position: relative;
+  margin-top: 40px;
+}
+blockquote::before {
+  display: block;
+  content: "\201C";
+  font-size: 500%;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+cite {
+  display: block;
+  font-size: 90%;
+  margin-top: 25px;
+}
+
+cite img {
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle; /*Aligns text vertically in the middle*/
 }
