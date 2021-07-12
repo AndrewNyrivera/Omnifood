@@ -33,30 +33,31 @@
     <title>Omnifood</title>
 </head>
 <body>
-    <header>
+    <header id="top">
             <nav>
                 <div class="row">
                     <img src="Omnifood+Content/logo-white.png" alt="Omnifood logo" class="logo">
-                    <img src="Omnifood+Content/logo.png" alt="Omnifood logo" class="logo-black">
+                    <a href="#top"><img src="Omnifood+Content/logo.png" alt="Omnifood logo" class="logo-black"></a>
                     <ul class="main-nav">
-                        <li><a href="#">Food Delivery</a></li>
-                        <li><a href="#">How it works</a></li>
-                        <li><a href="#">our cities</a></li>
-                        <li><a href="#">sign up</a></li>
+                        <li><a href="#features">Food Delivery</a></li>
+                        <li><a href="#works">How it works</a></li>
+                        <li><a href="#cities">our cities</a></li>
+                        <li><a href="#plans">sign up</a></li>
                     </ul>
                 </div>
             </nav>
                 
         <div class="hero-text-box">
             <h1>GOODBYE JUNK FOOD.<br>HELLO SUPER HEALTHY MEALS.</h1>
-            <a href="#" class="btn btn-full">I'm hungry</a><a href="#" class="btn btn-ghost">Show me more</a>
+            <a href="#" class="btn btn-full js--scroll-to-plans">I'm hungry</a>
+            <a href="#" class="btn btn-ghost js--scroll-to-start">Show me more</a>
         </div>
     </header>
 
     <!------------------------------------------------------>
     <!-- Features Section -->
     <!------------------------------------------------------>
-    <section class="section-features js--section-features">
+    <section class="section-features js--section-features" id="features">
         <div class="row">
             <h2>Get food fast &mdash; not fast food.</h2>
             <p class="long-copy">
@@ -142,7 +143,7 @@
     <!------------------------------------------------------>
     <!--  Steps Section   -->
     <!------------------------------------------------------>
-    <section class="section-steps">
+    <section class="section-steps" id="works">
         <div class="row">
             <h2>How it works &mdash; Simple as 1, 2, 3</h2>
         </div>
@@ -173,7 +174,7 @@
     <!------------------------------------------------------>
     <!--  Cities Section  -->
     <!------------------------------------------------------>
-    <section class="section-cities">
+    <section class="section-cities" id="cities">
         <div class="row">
             <h2>We're currently in these cities</h2>
         </div>
@@ -272,7 +273,7 @@
     <!--Plan Section-->
     <!------------------------------------------------------>
 
-    <section class="section-plans">
+    <section class="section-plans js--section-plans" id="plans">
         <div class="row">
             <h2>Start eating healthy today</h2>
         </div>
