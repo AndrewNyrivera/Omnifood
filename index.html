@@ -4,7 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--This tells the mobile phones to not zoom out of the page and should always start with a scale of 1-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">  THIS CAME WITH ! tab-->
+    
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,21 +19,34 @@
     <!--Style.css-->
     <link rel="stylesheet" href="resources/css/style.css">
     <link rel="stylesheet" href="resources/css/queries.css"> 
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/favicons/favicon-16x16.png">
+    <link rel="manifest" href="resources/favicons/site.webmanifest">
+    <link rel="mask-icon" href="resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="resources/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="resources/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
     <title>Omnifood</title>
 </head>
 <body>
     <header>
-        <div class="row">
             <nav>
-                <img src="Omnifood+Content/logo-white.png" alt="Omnifood logo" class="logo">
-                <ul class="main-nav">
-                    <li><a href="#">Food Delivery</a></li>
-                    <li><a href="#">How it works</a></li>
-                    <li><a href="#">our cities</a></li>
-                    <li><a href="#">sign up</a></li>
-                </ul>
+                <div class="row">
+                    <img src="Omnifood+Content/logo-white.png" alt="Omnifood logo" class="logo">
+                    <img src="Omnifood+Content/logo.png" alt="Omnifood logo" class="logo-black">
+                    <ul class="main-nav">
+                        <li><a href="#">Food Delivery</a></li>
+                        <li><a href="#">How it works</a></li>
+                        <li><a href="#">our cities</a></li>
+                        <li><a href="#">sign up</a></li>
+                    </ul>
+                </div>
             </nav>
-        </div>
+                
         <div class="hero-text-box">
             <h1>GOODBYE JUNK FOOD.<br>HELLO SUPER HEALTHY MEALS.</h1>
             <a href="#" class="btn btn-full">I'm hungry</a><a href="#" class="btn btn-ghost">Show me more</a>
@@ -41,7 +56,7 @@
     <!------------------------------------------------------>
     <!-- Features Section -->
     <!------------------------------------------------------>
-    <section class="section-features">
+    <section class="section-features js--section-features">
         <div class="row">
             <h2>Get food fast &mdash; not fast food.</h2>
             <p class="long-copy">
@@ -422,5 +437,15 @@
         </div>
 
     </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/respond@0.9.0/main.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/respond@0.9.0/main.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/respond@0.9.0/main.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
+<script src="vendors/js/jquery.waypoints.min.js"></script>
+<script src="resources/js/script.js"></script>
 </body>
+
+
 </html>
