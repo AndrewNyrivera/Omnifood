@@ -80,3 +80,46 @@ $('a[href*="#"]')
     offset: '50%'
   })
 });
+
+/* Mobile Navigation */
+$('.js--nav-icon').click(function() {
+  var nav = $('.js--main-nav');
+  var icon = $('.js--nav-icon i');
+  nav.slideToggle(200);
+
+  if (icon.hasClass('ion-navicon-round')) {
+    icon.addClass('ion-close-round');
+    icon.removeClass('ion-navicon-round');
+  } else {
+    icon.addClass('ion-navicon-round');
+    icon.removeClass('ion-close-round');
+  }
+
+});
+
+/* This is a bug fix that makes sure a bug that makes the navi icons disappear not happen */
+$(window).resize(function(){
+
+  var nav = $('.js--main-nav');
+  
+  var icon = $('.js--nav-icon i');
+  
+  if ($(window).width() > 767){
+  
+  nav.css("display", "block");
+  
+  icon.addClass('ion-close-round');
+  
+  icon.removeClass('ion-navicon-round');
+  
+  } else {
+  
+  nav.css("display", "none");
+  
+  icon.addClass('ion-navicon-round');
+  
+  icon.removeClass('ion-close-round');
+  
+  }
+  
+  });
